@@ -31,5 +31,5 @@ jobs:
 
       - name: Verificar que a API responde
         run: |
-          curl --fail http://localhost:8000/___    # (!) ajuste para sua rota
+          curl --fail https://curly-space-goggles-wrvj96g755r437gg-8000.app.github.dev/    # (!) ajuste para sua rota
           echo "API respondeu com sucesso"
