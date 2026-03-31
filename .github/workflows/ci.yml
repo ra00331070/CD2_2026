@@ -29,7 +29,5 @@ jobs:
           uvicorn main:app &    # (!) ajuste para o caminho do seu app
           sleep 3
 
-      - name: Verificar que a API responde
-        run: |
-          curl --fail https://curly-space-goggles-wrvj96g755r437gg-8000.app.github.dev/    # (!) ajuste para sua rota
-          echo "API respondeu com sucesso"
+      - name: Rodar testes
+        run: pytest tests/ -v --tb=short
